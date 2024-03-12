@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            position: relative;
+            width: 75vw;
+            height: 75vh;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card-image {
+            width: 40%;
+            height: 50%;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        .card-info {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 10px;
+            position: relative;
+        }
+
+        .card-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .ratings,
+        .filters,
+        .rank {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .rating,
+        .filter {
+            margin-right: 10px;
+            background-color: #f1c40f;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .rank-label {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .description {
+            line-height: 1.6;
+        }
+
+        .info {
+            width: 50%;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+     
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #999;
+            font-size: 24px; 
+            padding: 5px; 
+        }
+
+        .close-button:hover {
+            color: #333;
+        }
+
+      
+        .line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 50%; 
+            width: 2px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <span class="close-button" onclick="closeCard()">✖</span>
+        <div class="intro">
+            <img src="Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (formerly Prince of Wales Museum) (Mumbai).jpeg"
+                alt="Place Image" class="card-image">
+            <div class="card-info">
+                <div>
+                    <h2 class="card-heading">Chhatrapati Shivaji Maharaj Vastu Sangrahalaya</h2>
+                    <div class="ratings">
+                        <span class="rating">4.5</span>
+                        <span class="rating">Excellent</span>
+                    </div>
+                    <div class="filters">
+                        <span class="filter">Filter 1</span>
+                        <span class="filter">Filter 2</span>
+                    </div>
+                    <div class="rank">
+                        <span class="rank-label">Rank:</span>
+                        <span class="rank-value">1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div> <!-- Vertical line -->
+        </div>
+        <div class="info">
+            <p class="description">
+                The Chhatrapati Shivaji Maharaj Vastu Sangrahalaya, formerly known as the Prince of Wales Museum, is a museum in Mumbai, India. It is located in the heart of South Mumbai near the Gateway of India. The museum was established in the early 20th century to commemorate the visit of King George V to India. It houses a rich collection of artifacts, artwork, and cultural exhibits, representing various aspects of Indian history and heritage.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function closeCard() {
+            document.querySelector('.card').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
