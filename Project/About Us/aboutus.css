@@ -7,10 +7,11 @@
 }
 
 .first {
-  background: url(Assets/Tadoba\ Andhari\ Tiger\ Reserve\ \(Chandrapur\).jpeg);
+  background: url(Assets/sunset.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+ 
 }
 
 .navbar {
@@ -19,7 +20,7 @@
   z-index: 1000;
   transition: background-color 0.3s;
   width: 100%;
-  position: fixed;
+ 
   top: 0;
   left: 0;
 }
@@ -253,4 +254,118 @@ h1 {
 
 .PlaceInfo {
   color: #555;
+}
+
+/* Addition for the About Us Page  */
+.heading_welcome{
+ margin-left: 150px;
+ margin-top: 80px;
+  height:auto;
+}
+.heading_welcome h2{
+  margin-left: 30px;
+}
+.image_welcome{
+  background:url(Assets/waterfall.jpg);
+  width: 750px;
+  height:400px;
+  background-size: cover;
+  margin-top: 20px;
+  border-radius: 2rem;
+ border: 5px solid aliceblue;
+
+}
+.image_in_column{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.imageincol{
+  width:150px;
+  height:100px;
+}
+.image_in_column1{
+  background-image: url(Assets/Image\ in\ Column/Image1.jpg);
+  background-size: cover;
+  height: fit-content;
+  width:auto;
+  
+
+}
+
+.description{
+  height:800px;
+  width:auto;
+  margin: 40px 40px;
+}
+.description p{
+  margin:10px ;
+  
+}
+.description_content{
+  margin: auto;
+  text-align: justify;
+  padding: 20px;
+  background-color: #555;
+  border-radius: 20px;
+  color:azure;
+  
+
+}
+.description_content h2{
+  margin-left: 10px;
+  font-weight: bolder;
+  color:brown;
+  background-color: whitesmoke;
+  width:fit-content;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.description_content b{
+  color:yellow
+}
+
+.card_list1{
+  display: flex;
+  margin:20px 20px 20px 20px;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #555;
+ 
+}
+.destination_card{
+ align-self:center;
+  margin-top:20px;
+  height:400px;
+  width:300px;
+  background-color:#555;
+  align-items: center;
+  color:antiquewhite;
+  border-radius: 2rem;
+}
+.destination_card h3{
+  margin-left: 20px;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+h4{
+  margin-left:20px; 
+}
+.image_card1{
+  justify-content: center;
+  background-image:url(Assets/Image\ in\ Column/Image1.jpg);
+  background-size:cover;
+  margin-top: 15px;
+  height:200px;
+  width:200px;
+ padding: 5px;
+  
+}
+
+.tour_card h2{
+ text-align:center;
 }
